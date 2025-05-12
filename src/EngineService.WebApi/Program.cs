@@ -15,6 +15,7 @@ builder.Services.AddDbContext<EngineServiceDbContext>(options =>
 builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 
 builder.Services.AddScoped<IServiceRecordRepository, ServiceRecordRepository>();
+builder.Services.AddScoped<IServiceFileRepository, ServiceFileRepository>();
 
 // 3) MVC / API + Swagger (only once)
 builder.Services.AddControllers();

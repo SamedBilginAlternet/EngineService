@@ -6,6 +6,8 @@
         public string ?Brand { get; set; }            // Marka adı
         public string ?Model { get; set; }            // Model adı
         public int Year { get; set; }                // Üretim yılı
+
+        public DateTime? ReleaseDate { get; set; }
         public ICollection<ServiceRecord> ServiceRecords { get; set; }
             = new List<ServiceRecord>();           // Bu araca ait bakım kayıtları
     }
